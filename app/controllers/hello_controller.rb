@@ -1,5 +1,6 @@
 class HelloController < ApplicationController
   def index
-    render :plain => "Hello World!"
+    # render :plain => "Hello World!"
+    @msg = "こんちくわー"
   end
 end
