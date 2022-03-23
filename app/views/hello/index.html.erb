@@ -7,10 +7,15 @@
 <%
   price = 108
   tax = 1.1
+  result = price * tax 
 %>
 
-    <p>
-        税込み価格:
-        <%= result = price * tax 
-        result.floor %>円
-    </p>
+<p>
+  税込み価格:
+  <% if result > 100 %>
+  <%= 
+  result.floor %>円
+  <% else %>
+  足りないです
+  <% end %>
+</p>
